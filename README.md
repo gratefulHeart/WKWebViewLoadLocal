@@ -103,4 +103,25 @@ NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUser
     [webView loadFileURL:fileURL allowingReadAccessToURL:[NSURL fileURLWithPath:basePath isDirectory:YES]];
     
  ```
-    
+  使用WKWebView加载本地带参数的HTML  
+
+核心代码
+```objectivec
+
+   WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc]init];
+    [configuration.preferences setValue:@YES forKey:@"allowFileAccessFromFileURLs"];
+    WKWebView *webView = [[WKWebView alloc]initWithFrame:CGRectMake(0 * self.view.bounds.size.width, 0, self.view.bounds.size.width,    self.view.bounds.size.height-64) configuration:configuration];
+    [self.view  addSubview:webView];
+
+    NSString *tmpPath = NSTemporaryDirectory();
+    NSString *htmlPath =  [NSString stringWithFormat:@"%@/%@",tmpPath,@"web-mobile/index.html"];
+    NSString *JSON = [NSString stringWithFormat:@"?fileUrl=%@",@"http://ipsgame.speiyou.cn/resources/NumberString.json"];
+    NSURL *url = [NSURL fileURLWithPath:htmlPath];
+    NSURL *now = [NSURL URLWithString:JSON relativeToURL:url];
+    webView.navigationDelegate = self;
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:now];
+    [webView loadRequest:request];
+ ```
+1、主要是把资源拷贝到tmp文件夹下
+2、设置支持跨域allowFileAccessFromFileURLs
+
