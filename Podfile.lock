@@ -1,0 +1,20 @@
+PODS:
+  - Masonry (1.1.0)
+  - SensorsAnalyticsSDK (1.9.4):
+    - SensorsAnalyticsSDK/core (= 1.9.4)
+  - SensorsAnalyticsSDK/core (1.9.4)
+  - WoodPeckeriOS (1.0.3)
+
+DEPENDENCIES:
+  - Masonry (~> 1.1.0)
+  - SensorsAnalyticsSDK
+  - WoodPeckeriOS
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SensorsAnalyticsSDK: aa9256b2be7a8e969d4af22b3028152d6f3ecdcb
+  WoodPeckeriOS: 5c258da5be87bbb88b1f244f18dede25f749b48b
+
+PODFILE CHECKSUM: 32101ebfb3841064034da783aeec92a362496d32
+
+COCOAPODS: 1.4.0

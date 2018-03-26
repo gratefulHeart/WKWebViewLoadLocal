@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rud-1y-I6p">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VOd-ab-B7U">
+            <objects>
+                <viewController id="CZ6-5E-VRY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jA4-Ww-yNS"/>
+                        <viewControllerLayoutGuide type="bottom" id="DYL-UJ-rie"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MW6-sh-CWE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnf-rR-uTq">
+                                <rect key="frame" x="16" y="121" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="题目加载"/>
+                                <connections>
+                                    <segue destination="aH7-IW-PFv" kind="push" id="kU0-xk-nUh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcF-1Y-eav">
+                                <rect key="frame" x="16" y="163" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="wkwebView"/>
+                                <connections>
+                                    <segue destination="Pc6-YU-soM" kind="push" id="mQx-gu-QQx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dso-e7-MAA">
+                                <rect key="frame" x="10" y="227" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="wkwebView1"/>
+                                <connections>
+                                    <segue destination="bSW-aT-GOm" kind="push" id="dhn-8e-ItL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3y-Fs-eDk">
+                                <rect key="frame" x="143" y="120" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="iphoneX"/>
+                                <connections>
+                                    <segue destination="JlN-zA-4WB" kind="push" id="9lI-OP-cpc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mug-LA-NRH">
+                                <rect key="frame" x="142" y="165" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="设置音量"/>
+                                <connections>
+                                    <segue destination="InR-VD-CWL" kind="push" id="idy-oB-EjQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pA5-K1-Iwq">
+                                <rect key="frame" x="129" y="227" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="wkwebView2"/>
+                                <connections>
+                                    <segue destination="h0h-l4-8xh" kind="push" id="0xA-lA-DHE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kvw-pD-eOV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tkc-UT-tdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="367"/>
+        </scene>
+        <!--设置音量-->
+        <scene sceneID="tHs-w0-TeF">
+            <objects>
+                <viewController storyboardIdentifier="VolumeChangeViewController" id="InR-VD-CWL" customClass="VolumeChangeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r6S-Ud-NLH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kzn-gO-PzP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lE4-XU-bPc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVV-QU-M1c">
+                                <rect key="frame" x="16" y="97" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="设置音量=0.0"/>
+                                <connections>
+                                    <action selector="volumeChangeZero:" destination="InR-VD-CWL" eventType="touchUpInside" id="C19-9W-fsd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2p-pl-S2u">
+                                <rect key="frame" x="16" y="152" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="设置音量=1.0"/>
+                                <connections>
+                                    <action selector="volumeChangeOne:" destination="InR-VD-CWL" eventType="touchUpInside" id="Gek-al-gJJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="设置音量" id="tiW-Is-4io"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQ3-0c-Rhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="705" y="1189"/>
+        </scene>
+        <!--Web View Two View Controller-->
+        <scene sceneID="AKn-wA-GPR">
+            <objects>
+                <viewController storyboardIdentifier="WKWebViewTwoViewController" id="h0h-l4-8xh" customClass="WKWebViewTwoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MiR-qM-QH6"/>
+                        <viewControllerLayoutGuide type="bottom" id="RrP-aa-g7K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="utr-w3-vba">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5aw-lq-rWg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Qk-ki-18G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1943" y="592"/>
+        </scene>
+        <!--IphoneX View Controller-->
+        <scene sceneID="HN0-6h-YNX">
+            <objects>
+                <viewController storyboardIdentifier="IphoneXViewController" id="JlN-zA-4WB" customClass="IphoneXViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Ee-Hp-X1j"/>
+                        <viewControllerLayoutGuide type="bottom" id="eEv-jY-Qq3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tju-0I-nHc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kj2-n1-yYV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lI3-An-JHA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2638" y="876"/>
+        </scene>
+        <!--Web View View Controller-->
+        <scene sceneID="rBp-rg-dCi">
+            <objects>
+                <viewController id="Pc6-YU-soM" customClass="WKWebViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rbD-DJ-QHv"/>
+                        <viewControllerLayoutGuide type="bottom" id="eUJ-lh-JPg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xyy-bm-etz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pum-n2-XQY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Xb-nc-1HM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="199"/>
+        </scene>
+        <!--Web View Game View Controller-->
+        <scene sceneID="XN4-Gb-RWS">
+            <objects>
+                <viewController storyboardIdentifier="WKWebViewGameViewController" id="bSW-aT-GOm" customClass="WKWebViewGameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r37-hK-NOe"/>
+                        <viewControllerLayoutGuide type="bottom" id="BE8-H7-tNm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EkZ-uH-Rtb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N48-eB-MwY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ryC-Ax-YvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2620" y="176"/>
+        </scene>
+        <!--Web View Test View Controller-->
+        <scene sceneID="aEv-L1-NWB">
+            <objects>
+                <viewController id="aH7-IW-PFv" customClass="WebViewTestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="moC-EG-cCr"/>
+                        <viewControllerLayoutGuide type="bottom" id="ICp-l5-2XF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P8e-tH-wQw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="urP-39-GhE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ssz-cp-I6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791" y="266"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wKg-P8-aCH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rud-1y-I6p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kcc-Sq-Rv2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CZ6-5E-VRY" kind="relationship" relationship="rootViewController" id="h7x-gC-Adh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCp-0o-lzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264.80000000000001" y="489.80509745127438"/>
+        </scene>
+    </scenes>
+</document>
